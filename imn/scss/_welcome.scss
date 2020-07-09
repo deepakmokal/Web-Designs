@@ -1,0 +1,107 @@
+.welcomeWrapper{
+    
+    padding: 2em;
+    @media #{$sm}{
+        padding: 1em;
+        
+       }
+      @media #{$xs}{
+          padding: 1em;
+       }
+   
+}
+.btnWrapper{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 1em;
+    // align-items: center; 
+    @media #{$sm}{
+        flex-direction: column;
+        justify-content: flex-start;
+       
+       }
+      @media #{$xs}{
+          justify-content: flex-start;
+        flex-direction: column;
+        
+       }
+   
+}
+.btnWrapper > div{
+    margin: 2em;
+    padding: 1em;
+    background-color: #eee;
+    
+    // height: 50px;
+    // width: 100px;
+    outline: 1px solid #000;
+    @media #{$sm}{
+        margin: 1em;
+        padding: 1em;
+       
+       }
+      @media #{$xs}{
+        margin: 1em;
+        padding: 1em; 
+       }
+
+    h6{
+        font-weight: bold;
+        font-size: 15px;
+        white-space: nowrap;
+        @media #{$sm}{
+            white-space: normal;
+            text-align: center;
+           
+           }
+          @media #{$xs}{
+            white-space: normal;
+            text-align:center;
+
+           }
+    
+}
+}
+.freeShip{  
+.freeship{
+&::before{
+    font-family: FontAwesome;
+    content: '\f07a';
+    margin-right: 5px;
+    color: green;
+}
+}
+}
+
+.selectedSlot{  
+    .selslot{
+    &::before{
+        font-family: FontAwesome;
+        content: '\F017';
+        margin-right: 5px;
+        color: green;
+    }
+    }
+    }
+
+    .qualProd{  
+        .qual{
+        &::before{
+            font-family: FontAwesome;
+            content: '\f07a';
+            margin-right: 5px;
+            color: green;
+        }
+        }
+        }
+
+        .cod{  
+            .coda{
+            &::before{
+                font-family: FontAwesome;
+                content: '\f07a';
+                margin-right: 5px;
+                color: green;
+            }
+            }
+            }

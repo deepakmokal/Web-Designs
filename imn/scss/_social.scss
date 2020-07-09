@@ -1,0 +1,87 @@
+.mediaWrapper{
+    padding: 2em;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+    h3{
+        color: $white;
+        font-weight: bold;
+    }
+    background-color: #e55f2a;
+    color: #000;
+
+    & > div {
+        padding: 1em;
+        height: 200px;
+        width: 400px;
+    }
+    }
+
+    .subscribe .subWrap input[type="text"]{
+        // position: relative;
+        outline: none;
+        border: none;
+        height: 30px;
+        margin: 0;
+        padding-left: 45px;
+    }
+
+    .inpWrapper{
+        position: relative;
+        @media #{$md}{
+            
+    
+            
+            
+        }
+       @media #{$sm}{
+         display: inline-flex !important;  
+        }
+       @media #{$xs}{
+        display:inline-flex !important;
+        }
+        
+        i{
+            position: absolute;
+            color: #eee;
+            top: 7px;
+            left: 60px;
+
+            @media #{$sm}{
+                left: 5px;
+                top:3;   
+               }
+              @media #{$xs}{
+                top:3;
+               left: 5px;
+               }
+            
+        }
+    }
+    .subscribe .subWrap span button{
+        background-color: #000;
+        color: #fff;
+        width: 50px;
+        height: 30px;
+        outline: none;
+        border: none;
+        margin: 0;
+        margin-left: -5px;
+        
+    }
+
+    ::-webkit-input-placeholder {
+        font-style: italic;
+     }
+     :-moz-placeholder {
+        font-style: italic;  
+     }
+     ::-moz-placeholder {
+        font-style: italic;  
+     }
+     :-ms-input-placeholder {  
+        font-style: italic; 
+     }
+
+     

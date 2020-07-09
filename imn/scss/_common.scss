@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow:200,300,400,500,600,700,800,900|Roboto:300,300i,400,500,700,900&display=swap');
+
+ body {
+	font-family: $font_2;
+	font-weight: normal;
+	font-style: normal;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $font_1;
+	color: #0b1c39;
+
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: normal;
+}
+p {
+	font-family:$font_2;
+	color: $font_1;
+
+	font-size: 16px;
+	line-height: 24px;
+	margin-bottom: 15px;
+	font-weight: normal;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+li {
+	list-style: none
+}
+
+a:focus,
+a:hover,
+.portfolio-cat a:hover,
+.footer -menu li a:hover {
+	text-decoration: none;
+}
+
+.img {
+	max-width: 100%;
+	@include transition(.3s);
+}
+.f-left {
+	float: left
+}
+.f-right {
+	float: right
+}
+.fix {
+	overflow: hidden
+}
+.clear{
+    clear: both;
+}
+
+#scrollUp {
+	background: $primary-color;
+	height: 50px;
+	width: 50px;
+	right: 31px;
+	bottom: 40px;
+	@media #{$xs}{
+		right: 16px;
+	}
+	color: #fff;
+	font-size: 20px;
+	text-align: center;
+	border-radius: 50%;
+	line-height: 48px;
+	border: 2px solid transparent;
+}
+
+#scrollUp:hover {
+	color: #fff;
+}
+
+

@@ -1,0 +1,68 @@
+@import './reset';
+@import './variables';
+
+@import './mixins';
+@import './common';
+@import './preloader';
+@import './header';
+@import './carausal';
+
+@import './latest_prod';
+@import './welcome';
+
+@import './social';
+@import './footer';
+
+.ftco-section {
+	padding: 7em 0;
+	position: relative;
+	@media #{$sm}{
+		padding: 6em 0;
+	}
+}
+
+.ftco-animate {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.ftco-no-pt{
+	padding-top: 0 !important;
+}
+.ftco-no-pb{
+	padding-bottom: 0 !important;
+}
+
+
+@-webkit-keyframes pulse {
+    0% {
+      -webkit-box-shadow: 0 0 0 0 rgba($primary-color, 0.4);
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 30px rgba($primary-color, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba($primary-color, 0);
+    }
+  }
+  @keyframes pulse {
+    0% {
+      -moz-box-shadow: 0 0 0 0 rgba($primary-color, 0.4);
+      box-shadow: 0 0 0 0 rgba($primary-color, 0.4);
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 30px rgba($primary-color, 0);
+        box-shadow: 0 0 0 30px rgba($primary-color, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba($primary-color, 0);
+        box-shadow: 0 0 0 0 rgba($primary-color, 0);
+    }
+  }
+
+
+  /* scrollUp */
+
+
+
+  

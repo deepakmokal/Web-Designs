@@ -1,0 +1,113 @@
+footer{
+    background: #eee;
+    h3{
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+.wrapFooter{
+    flex-direction: row;
+  
+    
+    h3{
+        font-size: 16px;
+        font-weight: bold;
+    }
+    &.download{
+        display: block;
+        
+    }
+    & .download .googlebtn{
+       background-image: url('../images/compressed/googlebtn.png');
+        height: 50px;
+        width: 160px;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        border: none;
+        cursor: pointer;
+        
+    }
+    
+    & .download .applebtn{
+        background-image: url('../images/compressed/appstore_btn.png');
+        height: 50px;
+        border: none;
+        width: 160px;
+        background-position: center;
+        background-size: cover;
+        display: block;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+
+    @media #{$md}{
+        flex-direction: row;
+
+        
+        
+     }
+    @media #{$sm}{
+        flex-direction: column;
+        padding: 1em;
+
+        & > div{
+            margin-top: 1em;
+        }
+        // margin-top: 1em;
+        & .comapany{
+            
+                padding-left:0;
+            
+        }
+     }
+    @media #{$xs}{
+        flex-direction: column;
+        padding: 1em;
+        margin-top: 1em;
+        & > div{
+            margin-top: 1em;
+        }
+        & .comapany{
+            
+            padding-left:0;
+        
+    }
+     }
+    
+}
+
+.childFooter{
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 1em;
+
+   & .cardsFoot > div img{
+        display: inline-block !important;
+        padding: .5em;
+        height: 50px;
+        width: 80px;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+
+.topCategories{
+    flex-grow: 1;
+}
+.comapany{
+    flex-grow: 1;
+    padding-left: 1em;
+}
+
+.policies{
+    flex-grow: 1;
+}
+
+.download{
+    flex-grow: 1;
+}
